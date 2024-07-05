@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="/stylesheets/settings.css" />
+<% layout('layouts/boilerplate') %>
+    <form class="needs-validation" action="/profile/<%= user._id %>/settings" method="POST" novalidate enctype="multipart/form-data">
+    <div class="row mt-auto">
+
+         <div class="col-12 mt-5">
+            <label class="h5">Change profile picture</label>
+            <input type="file" class="form-control" name="image">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+
+        <div class="col-12 mt-4">
+          <label class="h5">Change the password</label>
+            <input type="text" class="form-control" name="oldPassword" placeholder="Old password">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <input type="text" class="form-control" name="newPassword" placeholder="New password">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+
+          <div class="col-12 mt-2">
+            <input type="text" class="form-control" name="confirmNewPassword" placeholder="Confirm password">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+        
+    </div>
+    <button class="btn btn-primary mt-2 submitBtn" type="submit">
+      Update
+      <span class="spinner-border spinner-border-sm d-none"> </span>
+    </button>
+    </form>
+    <script src="/javascripts/settings.js"></script>
+    <%- include('../partials/footer') %>
+

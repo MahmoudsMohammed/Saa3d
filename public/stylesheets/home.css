@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/dokcpejo1/image/upload/v1648513769/Saa3d/home.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.cover-container {
+    max-width: 60vw;
+}
+
+.logo {
+    height: 8rem;
+    width: 18rem;
+}
+
+.btn-secondary:hover {
+    background-color: #4CAF50;
+}
+
+p{
+    padding-inline: 5rem;
+    font-size: 20px;
+}

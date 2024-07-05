@@ -1,0 +1,15 @@
+<% if(success && success.length) {%>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+       <p class="h6" style="display: inline;"> <%= success %> </p>
+       <i class="fa fa-smile-o fa-lg"></i>
+        <button type="button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+<% } %>
+
+<% if(error && error.length) {%>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <p class="h6" style="display: inline;"><%= error %> </p>
+        <i class="fa fa-frown-o fa-lg"></i>
+        <button type="button" class="btn-close btn-sm" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <% } %>

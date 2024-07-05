@@ -1,0 +1,13 @@
+body {
+    background-color: #eee;
+}
+.cover-container {
+  max-width: 80vw;
+}
+a{
+  text-decoration: none;
+}
+.pic{
+    width: 2.5rem; 
+    height: 2.5rem;
+}

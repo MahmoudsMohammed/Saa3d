@@ -1,0 +1,26 @@
+.navlogo{
+    width: 8rem; 
+    height: 3rem; 
+}
+
+.navpic{
+     width: 2rem; 
+     height: 2rem;
+}
+
+.navp{
+    display: inline;
+}
+
+  .notfNum {
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: red;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  

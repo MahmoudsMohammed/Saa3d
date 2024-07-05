@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/stylesheets/main.css" />
+<% layout('layouts/boilerplate') %>
+
+    <div class="mt-5 card border-dark mb-3">
+    <div class="card-header bg-transparent border-dark d-flex">
+        <div class="h6">User</div>
+        <div class="ms-auto h6">Points</div>
+    </div>
+    <% for(let user of standing){ %> 
+        <div class="card-footer bg-transparent border-dark d-flex h6 my-auto">
+        <a href="/profile/<%= user._id %>"><span class="text-black h6"><%= user.username %></span></a>
+        <div class="ms-auto h6 my-auto"><%= user.point%></div>
+        </div>
+    <% } %> 
+    </div>
+    <%- include('../partials/footer') %>
+

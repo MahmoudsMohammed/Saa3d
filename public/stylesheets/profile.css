@@ -1,0 +1,60 @@
+body {
+    background-color: #eee;
+}
+
+.cover-container {
+  max-width: 95vw;
+}
+
+.profileImg{
+    width: 9rem;
+    height: 8rem;
+}
+  
+.offline{
+    color: crimson;
+}
+
+.online, .doneIcon:hover{
+    color: green;
+}
+
+.starIcon{
+  color: gold;
+}
+
+.pointIcon{
+    color: coral;
+  }
+
+/*review stars*/
+input.star {
+    display: none
+}
+
+input.star:checked~label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s
+}
+
+input.star-5:checked~label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952
+}
+
+input.star-1:checked~label.star:before {
+    color: #F62
+}
+
+label.star:hover {
+    transform: rotate(-15deg) scale(1.3)
+}
+
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome
+}
+a{
+    text-decoration: none;
+}

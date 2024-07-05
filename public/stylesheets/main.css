@@ -1,0 +1,44 @@
+body {
+    background-color: #eee;
+}
+.cover-container {
+    max-width: 80vw;
+  }
+/*
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 12px rgba(37, 185, 196, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(135, 93, 252);
+   }
+   */
+   .locationIcon{
+      color: green;
+   }
+
+.pointIcon{
+    color: gold;
+ }
+
+p{
+  display: inline;
+}
+
+.viewIcon:hover, .approveBtn:hover{
+  color: green;
+}
+.dropdown{
+  cursor: pointer;
+}
+.approveBtn, .viewIcon{
+  color: gray
+}
+
+a{
+  text-decoration: none;
+}

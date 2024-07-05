@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/stylesheets/settings.css" />
+<% layout('layouts/boilerplate') %>
+<form class="needs-validation" action="/main/search" method="POST">
+    <div class="row mt-5">
+        <div class="col-12">
+          <label class="h5">Search by City Name</label>
+            <input type="text" class="form-control" name="city" placeholder="City">
+        </div>
+
+        <div class="col-12 mt-2">
+          <label class="h5">Posts has number of points >= X</label>
+          <input type="number" class="form-control" name="points" placeholder="X">
+        </div>
+
+          <div class="col-12 mt-2">
+            <label class="h5">Search by User Name</label>
+            <input type="text" class="form-control" name="username" placeholder="User name">
+        </div>
+    </div>
+    <button class="btn btn-info mt-2 submitBtn text-white" type="submit">
+      Search
+      <span class="spinner-border spinner-border-sm d-none"> </span>
+    </button>
+    </form>    
+<%- include('../partials/footer') %>
+
